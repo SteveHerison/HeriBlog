@@ -6,7 +6,7 @@ export type BlogWithUsers = Prisma.BlogGetPayload<{
   };
 }>;
 
-export type BlogUsersWithUsers = Prisma.BlogGetPayload<{
+export type BlogUsersWithUsers = Prisma.BlogUserGetPayload<{
   include: {
     user: true;
   };
